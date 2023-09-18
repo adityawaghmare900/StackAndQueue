@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeekAndPopStack", "PeekAndPopStack.csproj", "{12C5BDD8-2DE1-494C-B921-C2892671B1B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateQueue_UC3", "CreateQueue_UC3.csproj", "{83AC0A3B-859A-48BC-8FE2-31ACEF302831}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12C5BDD8-2DE1-494C-B921-C2892671B1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12C5BDD8-2DE1-494C-B921-C2892671B1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12C5BDD8-2DE1-494C-B921-C2892671B1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12C5BDD8-2DE1-494C-B921-C2892671B1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AC0A3B-859A-48BC-8FE2-31ACEF302831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AC0A3B-859A-48BC-8FE2-31ACEF302831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AC0A3B-859A-48BC-8FE2-31ACEF302831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AC0A3B-859A-48BC-8FE2-31ACEF302831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0F453E35-76D1-4016-A7AC-BDBE3A0C0080}
+		SolutionGuid = {7E391352-0F0E-49E8-AA49-8C3EA20A696E}
 	EndGlobalSection
 EndGlobal
