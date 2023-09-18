@@ -1,4 +1,4 @@
-﻿namespace CreateQueue_UC3
+﻿namespace Dequeue_UC4
 {
     internal class Program
     {
@@ -8,6 +8,11 @@
             linkedListQueue.Enqueue(56);
             linkedListQueue.Enqueue(30);
             linkedListQueue.Enqueue(70);
+            linkedListQueue.Display();
+
+            Console.WriteLine("=========================================");
+            linkedListQueue.Dequeue();
+
             linkedListQueue.Display();
         }
     }

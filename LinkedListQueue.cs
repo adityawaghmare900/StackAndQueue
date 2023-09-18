@@ -4,45 +4,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CreateQueue_UC3
+namespace Dequeue_UC4
 {
-    public class LinkedListQueue
+    internal class LinkedListQueue
     {
-        Node head = null;
-
+        Node Front;
+        Node Rear;
         public void Enqueue(int data)
         {
-            Node node = new Node(data);
-            if(head == null)
+            Node node=new Node(data);
+            if(Front == null)
             {
-                head = node;
+                Rear = node;
+                Front = Rear;
             }
             else
             {
-                Node temp= head; 
-                while(temp.next != null)
-                {
-                    temp= temp.next;
-                }
-                temp.next = node;
+                Rear.next = node;
+                Rear = Rear.next;
             }
-            Console.WriteLine("{0} inserted into Queue", node.data);
-
         }
+
 
         public void Display()
         {
-            Node temp = this.head;
-            if(temp == null)
+            //Node temp = this.Front;
+            if(Front==null)
             {
-                Console.WriteLine("Queue is Empty");
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Node temp=Front;
+                while (temp != null)
+                {
+                    Console.WriteLine(temp.data + " ");
+                    temp=temp.next;
+                }
+            }
+        }
+
+        public void Dequeue()
+        {
+            if (this.Front == null)
                 return;
-            }
-            while(temp != null)
-            {
-                Console.WriteLine(temp.data+ " ");
-                temp=temp.next;
-            }
+            //Console.WriteLine("{0} is deleted", Front.data);
+
+            this.Front=this.Front.next;
+
+            if (this.Front == null)
+                this.Rear = null;
         }
     }
 }
