@@ -1,16 +1,24 @@
-﻿namespace CreateStack_UC1
+﻿namespace PeekAndPopStack
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            LinkedListStack linkedListStack = new LinkedListStack();
-            linkedListStack.push(56);
-            linkedListStack.push(30);
-            linkedListStack.push(70);
-            Console.WriteLine("============================");
-            Console.WriteLine("elements are: ");
-            linkedListStack.display();
+            LinkedListStacPeekAndPop linkedListStacPeekAndPop = new LinkedListStacPeekAndPop();
+            linkedListStacPeekAndPop.Push(56);
+            linkedListStacPeekAndPop.Push(30);
+            linkedListStacPeekAndPop.Push(70);
+            linkedListStacPeekAndPop.Display();
+            Console.WriteLine("========================================");
+
+            linkedListStacPeekAndPop.Peek();
+            Console.WriteLine("=========================================");
+
+            linkedListStacPeekAndPop.Pop();
+            Console.WriteLine("=========================================");
+
+            Console.WriteLine("After Popped values are: ");
+            linkedListStacPeekAndPop.Display();
         }
     }
 }
